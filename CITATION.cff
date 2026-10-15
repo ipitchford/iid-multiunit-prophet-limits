@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  Candidate citation metadata. The DOI is reserved, not evidence of a published
+  record. Targeted mathematical re-review and bound-PDF QA are complete;
+  frozen-archive and provider-publication gates remain pending.
+title: 'Asymptotic i.i.d. prophet inequalities: fixed-capacity limits and certified two-unit bounds'
+type: article
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23404235
+license: CC0-1.0
+abstract: >-
+  Candidate research manuscript on the limiting worst-case i.i.d. prophet ratio
+  for every fixed positive selection capacity, with a continuum minimax
+  characterization and certified two-unit bounds 0.83695 to 0.8372914.
+  Numerical witnesses concern two selections only. Original code is separately
+  MIT licensed. This metadata does not assert human peer review or publication.
+keywords:
+  - prophet inequalities
+  - online selection
+  - continuum minimax
+  - interval arithmetic

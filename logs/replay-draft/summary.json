@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0",
+  "input_hashes": {
+    "code/cert_lower_mix.py": "2167c926f7210d6171371560332bb4f1753bb4f9728ee634d34e93b48d93e28f",
+    "code/cert_upper2.py": "1a70452b77bfa8020508668ef57fe8f429b831500494a64b92e1da1660348ecc",
+    "code/certify_single.py": "9f50b9d1f92188be04c8b877a3e5227a6830a5898d91a8b434f587b06648e286",
+    "code/theta_cert.py": "f074f0f3dc3227f32d59deef01aed9399257a4c253a0627afde302de04b877d8",
+    "code/test_certifiers.py": "abd92a176010cf0326f94776fe9d39b4d949811c3cfcdf07d7c47616e5428bb0",
+    "code/replay.py": "62b01526a3ec3b8200ffbfaee3791bcb244ebc462ccb79d74d57e3b812ecb556",
+    "data/mix_fine.json": "f086815a6c4e7b69066ad996fa88c7ec958f9c629c7a3ba35c3e8dc3480f5bee",
+    "data/inst_do450.json": "a69c40a9c5c1641630785b07f4d5c3cb740cee0a008ee472c8a488cd5c269905",
+    "data/policy_k2_T24.json": "cb99a89e68082ae1eeb4935164c6dfc58ea23de52ad848a0f20473d95899fa9f"
+  },
+  "inputs_unchanged": true,
+  "runs": [
+    {
+      "label": "mixture-normal",
+      "command": [
+        "python",
+        "-B",
+        "code/cert_lower_mix.py",
+        "data/mix_fine.json",
+        "40"
+      ],
+      "started_utc": "2026-10-15T19:48:40.830577+00:00",
+      "elapsed_seconds": 0.9217797500314191,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "628a5400526a3ef6dc67736a7ef3d91f0e2119b0fa3e486df358021791e6d703",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "upper-normal",
+      "command": [
+        "python",
+        "-B",
+        "code/cert_upper2.py",
+        "data/inst_do450.json",
+        "80000"
+      ],
+      "started_utc": "2026-10-15T19:48:41.752966+00:00",
+      "elapsed_seconds": 1.8303656660718843,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "b5eb2b2423560db9a6ab3cce1d1dde03f1941cf69dc64db989598eaf57960369",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "theta-normal",
+      "command": [
+        "python",
+        "-B",
+        "code/theta_cert.py",
+        "2000"
+      ],
+      "started_utc": "2026-10-15T19:48:43.583957+00:00",
+      "elapsed_seconds": 0.23500262491870672,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "cff09a55b6da19d393acbcb3560c8a49c2a52a56b19eab0d758dd440ae35e829",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "single-normal",
+      "command": [
+        "python",
+        "-B",
+        "code/certify_single.py",
+        "data/policy_k2_T24.json",
+        "400"
+      ],
+      "started_utc": "2026-10-15T19:48:43.819579+00:00",
+      "elapsed_seconds": 0.3995735829230398,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "ab869e3c39c2133a99f829a705c94ba1eb75bfa3edccc0fd4d7b3369c0f1f2d4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "regression-normal",
+      "command": [
+        "python",
+        "-B",
+        "code/test_certifiers.py"
+      ],
+      "started_utc": "2026-10-15T19:48:44.219679+00:00",
+      "elapsed_seconds": 6.066272750031203,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "b985de9931a597754a1d56bf713a7a4818ceea5e98c0582fed5b2cfa820deec9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "mixture-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "code/cert_lower_mix.py",
+        "data/mix_fine.json",
+        "40"
+      ],
+      "started_utc": "2026-10-15T19:48:50.286851+00:00",
+      "elapsed_seconds": 1.2452235840028152,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "628a5400526a3ef6dc67736a7ef3d91f0e2119b0fa3e486df358021791e6d703",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "upper-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "code/cert_upper2.py",
+        "data/inst_do450.json",
+        "80000"
+      ],
+      "started_utc": "2026-10-15T19:48:51.535031+00:00",
+      "elapsed_seconds": 1.9186128339497373,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "b5eb2b2423560db9a6ab3cce1d1dde03f1941cf69dc64db989598eaf57960369",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "theta-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "code/theta_cert.py",
+        "2000"
+      ],
+      "started_utc": "2026-10-15T19:48:53.454183+00:00",
+      "elapsed_seconds": 0.22871308401226997,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "cff09a55b6da19d393acbcb3560c8a49c2a52a56b19eab0d758dd440ae35e829",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "single-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "code/certify_single.py",
+        "data/policy_k2_T24.json",
+        "400"
+      ],
+      "started_utc": "2026-10-15T19:48:53.683447+00:00",
+      "elapsed_seconds": 0.33380241703707725,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "ab869e3c39c2133a99f829a705c94ba1eb75bfa3edccc0fd4d7b3369c0f1f2d4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "regression-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "code/test_certifiers.py"
+      ],
+      "started_utc": "2026-10-15T19:48:54.017901+00:00",
+      "elapsed_seconds": 5.781304375035688,
+      "exit_code": 0,
+      "passed": true,
+      "reason": "expected checks passed",
+      "stdout_sha256": "c8069d8ebb1cb66bee23c9fe96de47d62e91ea8a3fe09aec399bc9d90da399fc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "all_passed": true,
+  "claim_ceiling": "Producer-side certificate replay, not independent implementation, full analytic proof review, or publication approval."
+}

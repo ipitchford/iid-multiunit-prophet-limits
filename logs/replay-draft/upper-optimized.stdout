@@ -1,0 +1,14 @@
+{
+ "V2_0_upper": "[0.837291393559 +/- 4.12e-14]",
+ "V1_0_upper": "[0.550080886201 +/- 2.01e-13]",
+ "benchmark": "[1.00000000002 +/- 4.34e-13]",
+ "ratio_upper": "[0.8372913935 +/- 4.19e-11]",
+ "claimed_upper": "0.8372914",
+ "below_claim": true,
+ "steps": 80000,
+ "M": 41,
+ "flint": "0.9.0",
+ "prec": 200,
+ "input": "inst_do450.json",
+ "input_sha256": "a69c40a9c5c1641630785b07f4d5c3cb740cee0a008ee472c8a488cd5c269905"
+}

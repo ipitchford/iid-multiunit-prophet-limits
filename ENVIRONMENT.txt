@@ -1,0 +1,10 @@
+Certificate dependency: python-flint==0.9.0
+Python baseline: 3.11 or later; observed draft runtime Python 3.11.14
+Observed platform: macOS arm64; cross-platform operation not independently certified
+Precision: mixture/single 256 bits; upper/theta 200 bits in standalone processes
+Execution: normal -B and optimized -O -B; PYTHONDONTWRITEBYTECODE=1
+Thread controls: OMP_NUM_THREADS=1, OPENBLAS_NUM_THREADS=1
+Network: none in replay
+Optional optimizers: NumPy/SciPy, not part of the reproducibility gate
+Exact draft input hashes and per-run timings: logs/replay-draft/summary.json
+Final frozen-archive environment and CI receipt: pending

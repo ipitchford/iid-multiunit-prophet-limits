@@ -1,0 +1,16 @@
+{
+  "label": "theta-normal",
+  "command": [
+    "python",
+    "-B",
+    "code/theta_cert.py",
+    "2000"
+  ],
+  "started_utc": "2026-10-15T19:48:43.583957+00:00",
+  "elapsed_seconds": 0.23500262491870672,
+  "exit_code": 0,
+  "passed": true,
+  "reason": "expected checks passed",
+  "stdout_sha256": "cff09a55b6da19d393acbcb3560c8a49c2a52a56b19eab0d758dd440ae35e829",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,17 @@
+{
+  "label": "upper-normal",
+  "command": [
+    "python",
+    "-B",
+    "code/cert_upper2.py",
+    "data/inst_do450.json",
+    "80000"
+  ],
+  "started_utc": "2026-10-15T19:48:41.752966+00:00",
+  "elapsed_seconds": 1.8303656660718843,
+  "exit_code": 0,
+  "passed": true,
+  "reason": "expected checks passed",
+  "stdout_sha256": "b5eb2b2423560db9a6ab3cce1d1dde03f1941cf69dc64db989598eaf57960369",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

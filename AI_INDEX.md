@@ -1,0 +1,30 @@
+# AI reading index
+
+## Identity and current status
+
+This is one integrated candidate, “Asymptotic i.i.d. prophet inequalities: fixed-capacity limits and certified two-unit bounds”, scholarly creator Anonymous, version 0.1.0-candidate. Read [status](STATUS.md) first: targeted mathematical re-review and bound-PDF QA are complete; frozen-archive and provider-publication gates remain pending. [Review summary](REVIEW_SUMMARY.md) binds those completed assessments to exact inputs. [Citation metadata](CITATION.cff) records the reserved DOI, not a claim of publication. No final archive identity is assigned here. [Provenance](PROVENANCE.md) identifies preserved source archives without requiring readers to obtain inaccessible historical files.
+
+## Main statement and model
+
+Read [README](README.md), [claims map](claims.md), then [complete manuscript source](paper.tex) and [PDF](paper.pdf). For every fixed k≥1, the manuscript proves convergence of the unrestricted worst-case known-law iid top-k ratio to a profile/coverage game value. The law may depend on n; values are nonnegative with finite positive mean. The analytic extension is not a numerical certificate for every k.
+
+For k=2 the interval is [0.83695,0.8372914], with rounded headline upper endpoint 0.83730. The nonlinear-system gap exceeds 18641/13700000. The exact theta bound is 5723787/6850000. No equality with the all-horizon infimum, exact constant, extremizer attainment, uniform-in-k rate or intrinsic mixture advantage is claimed.
+
+## Evidence dependencies
+
+* Fixed-k existence: manuscript `thm:general-k-game`, the layer-cake/lower-transfer lemma, verification induction, upper-transfer proposition, compactness and endpoint approximation. This is analytic evidence, not executed by tests.
+* Lower localization: [36-policy data](data/mix_fine.json) and [mixture certifier](code/cert_lower_mix.py), followed by the analytic lower transfer.
+* Upper localization: [41-atom layer measure](data/inst_do450.json) and [upper certifier](code/cert_upper2.py), followed by the analytic upper transfer. The layer measure is not itself a probability law of observations.
+* Nonlinear-system separation: [theta certifier](code/theta_cert.py), interval integral and comparison barriers, plus exact rational subtraction.
+* Simpler illustration: [24-piece policy](data/policy_k2_T24.json) and [single-policy certifier](code/certify_single.py).
+* Historical output classification: [certificate notes](certificates/README.md). Optional optimizer outputs are not rigorous proof bounds.
+
+## Replay and falsification
+
+Follow [REPLAY.md](REPLAY.md) using Python and python-flint 0.9.0. [replay.py](code/replay.py) requires a new output directory, records both normal and optimized runs, and checks semantic fields plus source continuity. [test_certifiers.py](code/test_certifiers.py) includes excessive-claim and malformed-input controls. See [pre-freeze receipt](REPLAY_RECEIPT.md), [portable summary](logs/replay-draft/summary.json) and [environment](ENVIRONMENT.txt). The historical folder name is retained; its input hashes bind computation, not final publication bytes.
+
+## Sources, assurance and reuse
+
+[Sources](SOURCES.md) and [citation audit](CITATION_AUDIT.md) distinguish fixed-horizon LPs, liminf constructions, instance-dependent extreme-value limits, and restricted static-threshold games. Bounded search is not priority proof. [Assurance](ASSURANCE.md) distinguishes mathematical arguments, numerical replay, AI-assisted review and unresolved final gates. No human peer-review or formal-verification claim is made.
+
+[Licence map](LICENSES.md), [public-domain notice](PUBLIC_DOMAIN.md), [prose licence](LICENSE) and [code licence](LICENSE-CODE) govern reuse. Cited works and runtime dependencies retain upstream terms. No unsupported review score or publication-state inference should be extracted from historical filenames or logs.

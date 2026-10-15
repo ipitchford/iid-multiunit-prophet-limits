@@ -1,0 +1,17 @@
+{
+  "label": "single-normal",
+  "command": [
+    "python",
+    "-B",
+    "code/certify_single.py",
+    "data/policy_k2_T24.json",
+    "400"
+  ],
+  "started_utc": "2026-10-15T19:48:43.819579+00:00",
+  "elapsed_seconds": 0.3995735829230398,
+  "exit_code": 0,
+  "passed": true,
+  "reason": "expected checks passed",
+  "stdout_sha256": "ab869e3c39c2133a99f829a705c94ba1eb75bfa3edccc0fd4d7b3369c0f1f2d4",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

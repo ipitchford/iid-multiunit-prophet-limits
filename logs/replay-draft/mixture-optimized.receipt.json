@@ -1,0 +1,18 @@
+{
+  "label": "mixture-optimized",
+  "command": [
+    "python",
+    "-O",
+    "-B",
+    "code/cert_lower_mix.py",
+    "data/mix_fine.json",
+    "40"
+  ],
+  "started_utc": "2026-10-15T19:48:50.286851+00:00",
+  "elapsed_seconds": 1.2452235840028152,
+  "exit_code": 0,
+  "passed": true,
+  "reason": "expected checks passed",
+  "stdout_sha256": "628a5400526a3ef6dc67736a7ef3d91f0e2119b0fa3e486df358021791e6d703",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

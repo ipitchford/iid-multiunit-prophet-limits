@@ -1,0 +1,111 @@
+PASS: python-flint 0.9.0
+PASS: mix rejects N=0
+PASS: upper rejects N=0
+PASS: single rejects N=0
+PASS: theta rejects N=0
+PASS: mix rejects N=-1
+PASS: upper rejects N=-1
+PASS: single rejects N=-1
+PASS: theta rejects N=-1
+PASS: mix rejects N=True
+PASS: upper rejects N=True
+PASS: single rejects N=True
+PASS: theta rejects N=True
+PASS: mix rejects N=False
+PASS: upper rejects N=False
+PASS: single rejects N=False
+PASS: theta rejects N=False
+PASS: mix rejects N=1.5
+PASS: upper rejects N=1.5
+PASS: single rejects N=1.5
+PASS: theta rejects N=1.5
+PASS: mix rejects N='40'
+PASS: upper rejects N='40'
+PASS: single rejects N='40'
+PASS: theta rejects N='40'
+PASS: mix rejects N=nan
+PASS: upper rejects N=nan
+PASS: single rejects N=nan
+PASS: theta rejects N=nan
+PASS: mix rejects N=inf
+PASS: upper rejects N=inf
+PASS: single rejects N=inf
+PASS: theta rejects N=inf
+PASS: mix rejects k=True
+PASS: single rejects k=True
+PASS: mix rejects k=False
+PASS: single rejects k=False
+PASS: mix rejects k=0
+PASS: single rejects k=0
+PASS: mix rejects k=-1
+PASS: single rejects k=-1
+PASS: mix rejects k=2.0
+PASS: single rejects k=2.0
+PASS: mix rejects T=True
+PASS: single rejects T=True
+PASS: mix rejects T=False
+PASS: single rejects T=False
+PASS: mix rejects T=0
+PASS: single rejects T=0
+PASS: mix rejects T=-1
+PASS: single rejects T=-1
+PASS: mix rejects T=2.0
+PASS: single rejects T=2.0
+PASS: mix invalid rational 'NaN'
+PASS: single invalid rational 'NaN'
+PASS: upper invalid rational 'NaN'
+PASS: mix invalid rational 'Infinity'
+PASS: single invalid rational 'Infinity'
+PASS: upper invalid rational 'Infinity'
+PASS: mix invalid rational '1/0'
+PASS: single invalid rational '1/0'
+PASS: upper invalid rational '1/0'
+PASS: mix invalid rational True
+PASS: single invalid rational True
+PASS: upper invalid rational True
+PASS: mix invalid rational 0.5
+PASS: single invalid rational 0.5
+PASS: upper invalid rational 0.5
+PASS: mix invalid rational nan
+PASS: single invalid rational nan
+PASS: upper invalid rational nan
+PASS: single malformed matrix []
+PASS: mix malformed matrix []
+PASS: single malformed matrix [[]]
+PASS: mix malformed matrix [[]]
+PASS: single malformed matrix 'not a matrix'
+PASS: mix malformed matrix 'not a matrix'
+PASS: single claim domain 0
+PASS: mix claim domain 0
+PASS: single claim domain -1
+PASS: mix claim domain -1
+PASS: single claim domain 1
+PASS: mix claim domain 1
+PASS: single claim domain NaN
+PASS: mix claim domain NaN
+PASS: zero mixture weight
+PASS: upper malformed x[]
+PASS: upper malformed nu[]
+PASS: upper malformed x['0']
+PASS: upper malformed x['1', '1']
+PASS: upper malformed nu['-1']
+PASS: theta invalid domain '0'
+PASS: theta invalid domain '0.5'
+PASS: theta invalid domain '-1'
+PASS: theta invalid domain True
+PASS: theta invalid domain 'NaN'
+PASS: lower inverse domain 0
+PASS: upper inverse domain 0
+PASS: lower inverse domain -1
+PASS: upper inverse domain -1
+PASS: lower inverse domain 2
+PASS: upper inverse domain 2
+PASS: mixture 40 positive certificate
+PASS: upper 80000 positive certificate
+PASS: single 400 positive certificate
+PASS: theta bracket
+PASS: theta 2000 positive barrier
+PASS: excessive mixture claim rejected
+PASS: excessive upper claim rejected
+PASS: excessive single claim rejected
+{"tests_passed": 110, "optimized": false, "flint": "0.9.0"}

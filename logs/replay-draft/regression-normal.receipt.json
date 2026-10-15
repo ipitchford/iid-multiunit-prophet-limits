@@ -1,0 +1,15 @@
+{
+  "label": "regression-normal",
+  "command": [
+    "python",
+    "-B",
+    "code/test_certifiers.py"
+  ],
+  "started_utc": "2026-10-15T19:48:44.219679+00:00",
+  "elapsed_seconds": 6.066272750031203,
+  "exit_code": 0,
+  "passed": true,
+  "reason": "expected checks passed",
+  "stdout_sha256": "b985de9931a597754a1d56bf713a7a4818ceea5e98c0582fed5b2cfa820deec9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

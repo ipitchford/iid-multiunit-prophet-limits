@@ -1,0 +1,11 @@
+{
+  "title": "Asymptotic i.i.d. prophet inequalities: fixed-capacity limits and certified two-unit bounds",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [{"name": "Anonymous"}],
+  "version": "0.1.0-candidate",
+  "doi": "10.5281/zenodo.23404235",
+  "license": "cc-zero",
+  "description": "Candidate research manuscript and reproducibility package, version 0.1.0-candidate. For each fixed positive selection capacity, the manuscript establishes the worst-case i.i.d. prophet limit and a continuum minimax characterization. Rational witnesses and interval arithmetic certify 0.83695 <= gamma_2 <= 0.8372914 for two selections only, with strict separation from the specified nonlinear-system value. Original prose and data are CC0-1.0; original executable code is MIT. Targeted AI-assisted mathematical re-review and bound-PDF QA are complete; these are not human peer review, formal verification or publication approval. The DOI is reserved; this local metadata does not assert that the record is public. Frozen-archive and provider-publication gates remain pending.",
+  "keywords": ["prophet inequalities", "online selection", "fixed-capacity limits", "continuum minimax", "interval arithmetic"]
+}

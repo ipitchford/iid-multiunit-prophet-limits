@@ -1,0 +1,16 @@
+{
+  "label": "regression-optimized",
+  "command": [
+    "python",
+    "-O",
+    "-B",
+    "code/test_certifiers.py"
+  ],
+  "started_utc": "2026-10-15T19:48:54.017901+00:00",
+  "elapsed_seconds": 5.781304375035688,
+  "exit_code": 0,
+  "passed": true,
+  "reason": "expected checks passed",
+  "stdout_sha256": "c8069d8ebb1cb66bee23c9fe96de47d62e91ea8a3fe09aec399bc9d90da399fc",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
