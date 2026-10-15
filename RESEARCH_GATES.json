@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "recordKind": "retrospective-consolidation",
+  "recordDate": "2026-10-15",
+  "provenance": "Retrospective consolidation of the recorded 2026-10-15 prior-art refresh, public CITATION_AUDIT.md, integrated proof/re-review and replay evidence. Not a prospective registration, reconstructed discovery chronology, new search, or final publication pass. Search dates below are the dates recorded by the source audit. Unknown effort and cost are not inferred.",
+  "evidence": {
+    "publicSourceAudit": "CITATION_AUDIT.md",
+    "sourceRegister": "SOURCES.md",
+    "reviewAndResponse": "REVIEW_SUMMARY.md",
+    "replay": "logs/replay-draft/summary.json",
+    "priorArtRecord": "Dated private prior-art-refresh.md, sections Exact primary-source comparison and Search record and residual novelty claim; its relevant source comparisons and exact recorded queries are consolidated here and in CITATION_AUDIT.md without requiring private file access.",
+    "readingBoundary": "sourcesReadInFull is the pinned schema's legacy name. Entries specify full-text sections actually reported read, not a claim that every page of every source was checked. This consolidation does not itself repeat those readings."
+  },
+  "contributionMap": [
+    {
+      "claim": "For every fixed integer k>=1 the worst-case known-law nonnegative iid top-k ratio has a limit equal to the finite-profile infimum and compact-closure cumulative-payoff maximin.",
+      "unit": "statement",
+      "paperLocation": "Abstract; Section 2, thm:general-k-game",
+      "searches": [
+        {"date": "2026-10-15", "query": "iid prophet inequality fixed k limit existence continuum minimax 2026", "corpus": "public web discovery followed by primary arXiv full texts"},
+        {"date": "2026-10-15", "query": "\"prophet\" \"limit\" \"fixed k\" iid 2026", "corpus": "public web"},
+        {"date": "2026-10-15", "query": "\"prophet inequality\" \"limit exists\" \"k\"", "corpus": "public web"},
+        {"date": "2026-10-15", "query": "\"prophet inequality\" \"limit existence\" iid", "corpus": "public web"},
+        {"date": "2026-10-15", "query": "\"multiunit\" \"prophet\" \"convergence\" \"worst\" 2026", "corpus": "public web"}
+      ],
+      "closestPriorWork": "JMZ v5 Section 4 fixed-horizon LP; BPV v2 Theorem 2 and MGLP v2 Section 5 provide construction-specific liminf bounds; KM26 fixes the law. LMPPV uses restricted single-threshold games. See CITATION_AUDIT.md for exact distinctions.",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "The fixed-capacity proof combines controlled pure-death chains, law-uniform fixed-policy lower transfer, optimal-policy upper transfer, compact cumulative coverage and origin/tail control of finite-mixture approximation.",
+      "unit": "method",
+      "paperLocation": "Section 2, lower transfer, verification, upper transfer and compact minimax proofs",
+      "searches": [
+        {"date": "2026-10-15", "query": "\"iid\" \"prophet\" \"continuum\" minimax limit", "corpus": "public web followed by primary full texts"},
+        {"date": "2026-10-15", "query": "\"prophet\" \"multi-unit\" \"limiting\" \"minimax\"", "corpus": "public web"}
+      ],
+      "closestPriorWork": "JMZ occupancy/type-coverage LP; LMPPV Section 3 and Appendix C.4 kernel topology, minimax and transfer; classical compactness/separation and Poisson coupling. The integrated proof supplies its own separation and elementary coupling arguments; no new general minimax or Poisson theorem is claimed.",
+      "verdict": "partially-known-cited"
+    },
+    {
+      "claim": "For k=2, 0.83695<=gamma_2<=0.8372914 and gamma_2-(theta_1*+theta_2*)>18641/13700000; the rounded headline upper endpoint is 0.83730.",
+      "unit": "statement",
+      "paperLocation": "Introduction thm:main; certificate propositions prop:lowcert, prop:upcert, prop:theta; exact rational subtraction",
+      "searches": [
+        {"date": "2026-10-15", "query": "\"prophet inequalities\" \"liminf\" \"2026\"", "corpus": "public web and primary BPV/MGLP/JMZ texts"},
+        {"date": "2026-10-15", "query": "\"prophet inequality\" \"limit existence\" iid", "corpus": "public web"}
+      ],
+      "closestPriorWork": "BPV v2 Theorem 2 and MGLP v2 Proposition 5.4/Eq. (5.7) and tightness discussion; JMZ fixed-n numerical enclosure. Their valid lower bounds and finite-horizon characterizations remain intact. Bounded comparison supports the precise separation, not exhaustive priority or suboptimality of the entire eta=0 program.",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "An occupancy-weighted bounded measurable deterministic quantile policy simultaneously dominates the cumulative coverage of a finite bounded-policy mixture, in continuous time and at each finite horizon.",
+      "unit": "method",
+      "paperLocation": "Section 2, prop:general-k-occupancy-domination",
+      "searches": [
+        {"date": "2026-10-15", "query": "prophet inequality occupancy randomized quantiles deterministic threshold domination", "corpus": "public web followed by JMZ full text and PSM13 primary PDF"}
+      ],
+      "closestPriorWork": "JMZ v5 Lemma 2.11, Eq. (7), Appendix C, Section 4 Eq. (25); PSM13 Lemma 3.2 and Section 4 concave-action mean-policy recovery. Explicit continuous-time specialization, not a novel purification principle.",
+      "verdict": "known-cited"
+    }
+  ],
+  "sourcesReadInFull": [
+    {"citation": "Jiang, Ma, Zhang, arXiv:2205.00588v5", "usedFor": "Fixed-horizon LP and occupancy/threshold recovery; distinguish finite-n from limiting game", "readWhat": "Introduction 1.2-1.3; Section 2 Lemma 2.11/Eq. (7); Appendix C proof; Section 4 Definition 4.1/Eq. (25)/Theorem 4.2; Section 4.3 Proposition 4.8", "date": "2026-10-15", "evidenceLocator": "https://arxiv.org/html/2205.00588v5 ; CITATION_AUDIT.md Claim-to-source map"},
+    {"citation": "Brustle, Perez-Salazar, Verdugo, arXiv:2406.17767v2", "usedFor": "Scope of nonlinear-system lower bound and restricted-dual interpretation", "readWhat": "Section 2 Eq. (7); Section 3 Theorem 1; Section 4 Theorem 2 and Section 4.1; concluding discussion", "date": "2026-10-15", "evidenceLocator": "https://arxiv.org/html/2406.17767v2 ; CITATION_AUDIT.md Claim-to-source map and source issues"},
+    {"citation": "Molina, Gast, Loiseau, Perchet, arXiv:2408.07616v2", "usedFor": "Construction-specific liminf, tightness conjecture and top-k normalization", "readWhat": "Section 5 Proposition 5.4/Eq. (5.7), discussion after Table 2, Proposition 5.5; single-selection comparison Section 3 Eq. (3.1)", "date": "2026-10-15", "evidenceLocator": "https://arxiv.org/html/2408.07616v2 ; CITATION_AUDIT.md Multiple-selection tightness conjecture"},
+    {"citation": "Loiseau, Molina, Perchet, Perez-Salazar, Verdugo, arXiv:2608.08662", "usedFor": "Kernel/minimax and endpoint-transfer precedent, restricted policy/model distinction", "readWhat": "Sections 1-2 model/kernels; Section 3 Definition 1 and strong-duality argument; Appendix C.4; Section 5 extensions", "date": "2026-10-15", "evidenceLocator": "https://arxiv.org/html/2608.08662 ; CITATION_AUDIT.md Quantile-kernel minimax precedent"},
+    {"citation": "Kong, Murthy, arXiv:2602.18756v2", "usedFor": "Fixed-law extreme-value asymptotics are not a worst-case-over-laws limit", "readWhat": "Theorem 3.1, Proposition 6.3, Appendix A.1", "date": "2026-10-15", "evidenceLocator": "https://arxiv.org/html/2602.18756v2 ; CITATION_AUDIT.md Fixed-distribution extreme-value asymptotics"},
+    {"citation": "Cruz-Ossa, Perez-Salazar, Verdugo, arXiv:2602.20398v1", "usedFor": "Distinguish competition complexity and single-threshold policy class", "readWhat": "Model and Theorem 1", "date": "2026-10-15", "evidenceLocator": "https://arxiv.org/html/2602.20398v1 ; CITATION_AUDIT.md Competition-complexity comparison"},
+    {"citation": "Petrik, Subramanian, Marecki (2013), arXiv:1309.6857", "usedFor": "Known concave-action deterministic recovery; no new purification claim", "readWhat": "Lemma 3.2 PDF page 4; Section 4 Lemma 4.1 and Theorem 4.6", "date": "2026-10-15", "evidenceLocator": "https://arxiv.org/pdf/1309.6857 ; CITATION_AUDIT.md Concave-action mean-policy construction"},
+    {"citation": "Le Cam (1960), An approximation theorem for the Poisson binomial distribution", "usedFor": "Poisson approximation convention and methodological context; manuscript independently gives needed coupling", "readWhat": "Section 2 Theorem 1, printed pages 1183-1184; Section 3 Proposition 1, as recorded by the citation audit", "date": "2026-10-15", "evidenceLocator": "CITATION_AUDIT.md Poisson approximation error; SOURCES.md LeCam"}
+  ],
+  "sourceLimitations": [
+    "Fan's original scan and HK82 full text were not recovered in this audit; do not claim full verification of these sources. The integrated minimax proof is explicit rather than depending on an unchecked Fan invocation.",
+    "English-language bounded web/full-text comparison is not exhaustive citation-network coverage or a priority inquiry. Google-Scholar-restricted searches yielded no usable confirmation. No citation counts are inferred.",
+    "The source register includes additional contextual publications; their role and exact reading scope remain in CITATION_AUDIT.md. No unrecorded query or new reading is asserted by this consolidation."
+  ],
+  "limitationTriage": [
+    {"limitation": "Equality of lim_n gamma_(n,k) with inf_n gamma_(n,k) is not proved.", "closingQuestion": "Does an existing monotonicity or horizon-comparison theorem imply equality?", "triedOrSearched": "Inspected JMZ limiting discussion, BPV Theorem 2 and MGLP Section 5; separated liminf guarantees from equality. Integrated proof does not supply monotonicity.", "estimatedCost": "Unknown; no bounded completion estimate established", "cheap": false, "decision": "OPEN", "reasonOpen": "A distinct mathematical statement not implied by convergence or the reviewed predecessors.", "whyNotClosedNow": "No known theorem closing it was located; no speculative new research is represented as complete."},
+    {"limitation": "The exact two-unit constant and exact optimal policy/profile are not identified.", "closingQuestion": "Do the certificates or known extremizer results close the bracket or attain its endpoints?", "triedOrSearched": "Compared supplied lower/upper witnesses and predecessor formulations; replay certifies the bracket, not equality; re-review retains this limit.", "estimatedCost": "Unknown; no bounded analytic solution or certified search completion is available", "cheap": false, "decision": "OPEN", "reasonOpen": "Distinct witnesses leave a nonzero interval; optimizer diagnostics are not proof of global optimality.", "whyNotClosedNow": "No exact extremal characterization established."},
+    {"limitation": "Only fixed k is covered; no growing-k limit or uniform-in-k convergence rate is proved.", "closingQuestion": "Do the transfer estimates and compactness choices remain uniform as k grows with n?", "triedOrSearched": "General-k proof makes order k, epsilon, mixture, n explicit; constants depend on selected policy/profile and endpoint choices. Prior-art comparison distinguishes other asymptotic regimes.", "estimatedCost": "Unknown; uniform estimates would require additional analysis", "cheap": false, "decision": "OPEN", "reasonOpen": "Fixed-parameter convergence does not imply joint convergence.", "whyNotClosedNow": "No uniform endpoint/approximating-policy control established."},
+    {"limitation": "Maximum attained in cumulative-payoff closure, not necessarily by one bounded policy; profile infimum need not be attained.", "closingQuestion": "Does compactness of payoff functions transfer to implementable bounded controls or adversarial profiles?", "triedOrSearched": "Reviewed compactification and approximation argument and occupancy construction; no compactness of raw thresholds/profile measures is assumed.", "estimatedCost": "Unknown; new compactness or extremizer argument required", "cheap": false, "decision": "OPEN", "reasonOpen": "Closure attainment alone does not produce a bounded optimizer or minimizing profile.", "whyNotClosedNow": "The available domination lemma addresses finite mixtures only."},
+    {"limitation": "No numerical bracket or nonlinear-system separation for k>=3 is established.", "closingQuestion": "Do existing larger-budget witnesses and certificates prove an analogous statement?", "triedOrSearched": "Inspected older audit scope and generalized analytic barrier recipe; current shipped witness replay is k=2 only. Older k=3 policy computation is not promoted into a new numerical separation.", "estimatedCost": "Unknown; would require separately scoped witnesses, checks and comparison", "cheap": false, "decision": "OPEN", "reasonOpen": "An analytic all-fixed-k transfer is not a computed k>=3 witness.", "whyNotClosedNow": "No suitable new certified upper/lower comparison produced; no optimizer rerun authorized by this consolidation."},
+    {"limitation": "Separation does not identify whether eta=0 restriction or its chosen feasible construction causes loss.", "closingQuestion": "Does beating the nonlinear-system value bound the optimum of the entire restricted program?", "triedOrSearched": "Read BPV final discussion and the supplied objection; integrated discussion explicitly distinguishes the restricted program from one feasible construction.", "estimatedCost": "Unknown for resolving the restricted optimization problem", "cheap": false, "decision": "OPEN", "reasonOpen": "Suboptimality of one feasible value is not suboptimality of the whole restricted program.", "whyNotClosedNow": "No independent restricted-program bound established; unsupported causal claim removed."},
+    {"limitation": "Occupancy domination need not preserve equal mesh, attain optimum, remove atom tie-breaking, or preserve static-threshold restrictions.", "closingQuestion": "Can the known flow recovery be stated with exactly the properties it preserves?", "triedOrSearched": "Checked JMZ occupancy recovery and PSM13 concave-action precedent; proved explicit continuous/discrete domination with zero occupancies and retained mesh/atom qualifications.", "estimatedCost": "Not prospectively forecast; completed analytic clarification is recorded without reconstructed time", "cheap": true, "decision": "CLOSED", "reasonOpen": "", "whyNotClosedNow": "", "closureScope": "Closed the interpretation/statement defect, not the stronger same-mesh or optimizer-attainment questions."},
+    {"limitation": "Numerical replay is not universal analytic proof, formal verification or independent human reproduction.", "closingQuestion": "Do available alternative implementations or formal proof artifacts establish those stronger assurance levels?", "triedOrSearched": "Reviewed supplied report, available older audit, current independent-code scope and coordinated replay/re-review receipts; later combined-audit archive referenced by the supplied report was not available.", "estimatedCost": "Unknown; independent external checking/formalization not scheduled or costed", "cheap": false, "decision": "OPEN", "reasonOpen": "Producer-side replay and AI review cannot be relabeled as independent human or formal proof.", "whyNotClosedNow": "Missing later audit is disclosed; no formal proof or external human verification fabricated."},
+    {"limitation": "The model is known-law iid nonnegative observations with finite positive mean, and asymptotic n>=k.", "closingQuestion": "Do layer cake and quantile realization already cover atoms and unbounded finite-mean laws without changing the model?", "triedOrSearched": "Integrated proof uses fresh conditional quantiles for atoms and Tonelli with finite mean; re-review checked distributional quantifiers. No non-iid, unknown-law, signed-value or infinite-mean extension was proved.", "estimatedCost": "Unknown for changing the model; no completion forecast", "cheap": false, "decision": "OPEN", "reasonOpen": "These are explicit theorem hypotheses, not evidence of the broader models.", "whyNotClosedNow": "Changing them is a different problem; within-model atoms and unbounded finite-mean laws are already handled."},
+    {"limitation": "The two zero-value branches previously relied on unnecessary positivity assumptions.", "closingQuestion": "Can nonnegativity close both cases without numerical certificates?", "triedOrSearched": "Added c=0 branches in lower transfer and compact-minimax existence proof; targeted re-review verified both.", "estimatedCost": "Not prospectively forecast; completed proof repair, no reconstructed duration", "cheap": true, "decision": "CLOSED", "reasonOpen": "", "whyNotClosedNow": ""},
+    {"limitation": "Original upper certifier accepted negative N and other input-domain checks were incomplete.", "closingQuestion": "Can explicit domain validation and semantic controls close the observed fail-open paths?", "triedOrSearched": "Preserved original negative-N false-positive receipt, hardened positive integer/exact rational/dimension domains, bounded inverse loops; 110 regressions pass normally and under -O; eight positive certificate CLI replays pass.", "estimatedCost": "Not prospectively forecast; actual subprocess clocks retained, no total effort estimate", "cheap": true, "decision": "CLOSED", "reasonOpen": "", "whyNotClosedNow": "", "closureScope": "Observed validation defects repaired; finite tests are not a correctness theorem for every possible input."},
+    {"limitation": "Bounded prior-art search does not establish exhaustive priority.", "closingQuestion": "Would a known equivalent theorem in the inspected sources eliminate the stated contribution?", "triedOrSearched": "Dated exact queries and primary-source comparisons above found no equivalent all-fixed-k optimal-adaptive worst-case theorem; recognized occupancy and kernel-method precedents are credited.", "estimatedCost": "Unknown for exhaustive priority coverage; no finite completeness claim", "cheap": false, "decision": "OPEN", "reasonOpen": "A negative bounded search cannot exclude all prior or unpublished equivalents.", "whyNotClosedNow": "Priority uncertainty is retained rather than converted into a fabricated exhaustive pass."}
+  ],
+  "extensionScout": {
+    "by": "Coordinated AI research: mathematical proof audit and prior-art comparison, then manuscript integration and targeted re-review; retrospective record, not independent human assessment",
+    "date": "2026-10-15",
+    "proposals": [
+      "Investigate whether the two-unit analytic limit/transfer proof extends to each fixed positive selection budget, after comparing predecessor scope.",
+      "Make occupancy-weighted deterministic domination explicit and correctly attributed rather than interpreting the mixture as intrinsically superior.",
+      "Separate analytic existence from numerical positivity and correct certificate-input failure paths."
+    ],
+    "actions": [
+      "Read the recorded primary comparisons; developed the all-fixed-k verification induction, two transfers, compact-separation argument and origin/tail approximation; integrated complete proofs and obtained targeted re-review acceptance. No general-k numerical result is inferred.",
+      "Proved zero-occupancy-safe continuous/discrete flow recovery and simultaneous concavity domination; credited JMZ and recorded PSM13 background; retained mesh, atom and attainment limits.",
+      "Handled both zero-value proof cases; hardened four certifiers; retained actual normal/optimized positive and negative-control evidence. No prospective time forecast, aggregate effort or paid-compute estimate is invented."
+    ]
+  }
+}
